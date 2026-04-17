@@ -71,8 +71,12 @@ All models achieve AUC > 0.99 across all scenarios.
 ```
 nuclear-ml-thesis/
 ├── notebooks/
-│   ├── thesis_analysis.ipynb      # Main notebook — full pipeline with all outputs
-│   └── ML_SF_exploration.ipynb    # Original data exploration (single file analysis)
+│   ├── combined_analysis.ipynb       # Combined U238 + U235 + Pu239 — all models + outputs
+│   ├── uranium238_analysis.ipynb     # U238-only — all models + outputs
+│   ├── uranium235_analysis.ipynb     # U235-only — all models + outputs
+│   ├── plutonium239_analysis.ipynb   # Pu239-only — all models + outputs
+│   ├── thesis_analysis.ipynb         # Full pipeline in one notebook
+│   └── ML_SF_exploration.ipynb       # Original single-file data exploration
 ├── figures/
 │   ├── exploration/
 │   │   ├── assembly_layout.png
